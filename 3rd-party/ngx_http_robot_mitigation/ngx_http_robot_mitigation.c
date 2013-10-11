@@ -1391,7 +1391,7 @@ ngx_http_rm_ip_whitelist_parse(ngx_conf_t *cf, ngx_command_t *dummy, void *conf)
 			return NGX_CONF_ERROR;
 		}
 	} else {
-		end = INADDR_NONE;
+		end = start;
 	}
 
     item = ngx_array_push(rlcf->ip_whitelist_items);
